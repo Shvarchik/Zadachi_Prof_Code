@@ -28,11 +28,11 @@ for (int i = 0; i < info.Length; i++)
     for (int j = endIndex; j >= startIndex; j--) 
     {
         if (data[j] == 1)
-            newElement = newElement + Convert.ToInt32(Math.Pow(2, degree));
+            newElement += Convert.ToInt32(Math.Pow(2, degree));
         degree++;
     }
     rezultArray [i] = newElement;
-    startIndex = startIndex + info[i];
+    startIndex += info[i];
 }
 PrintArray(rezultArray);
 
