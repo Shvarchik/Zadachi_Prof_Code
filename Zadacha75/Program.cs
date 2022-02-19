@@ -15,8 +15,13 @@ void PrintArray(int[] array)
     Console.WriteLine();
 }
 
-int[] data = { 0, 1, 1, 1, 1, 0, 0, 0, 1 };
-int[] info = { 2, 3, 3, 1 };
+int[] data = { 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0};
+int[] info = { 2, 3, 3, 1, 4, 2};
+if (info.Sum() != data.Length) 
+{
+    Console.WriteLine ("число элементов массива data не соотвествует массиву info");
+    Environment.Exit(1);
+}
 int[] rezultArray = new int [info.Length];
 int startIndex = 0;
 int endIndex = 0;
