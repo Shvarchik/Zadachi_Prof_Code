@@ -24,10 +24,9 @@ if (info.Sum() != data.Length)
 }
 int[] rezultArray = new int [info.Length];
 int startIndex = 0;
-int endIndex = 0;
 for (int i = 0; i < info.Length; i++)
 {
-    endIndex = startIndex + info[i] - 1;
+    int endIndex = startIndex + info[i] - 1;
     int newElement = 0;
     int degree = 0;
     for (int j = endIndex; j >= startIndex; j--) 
